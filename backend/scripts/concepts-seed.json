@@ -1,0 +1,384 @@
+{
+  "concepts": [
+    {
+      "id": "js-variables-scope",
+      "name": "Variables & Scope",
+      "domain": "javascript",
+      "difficulty": 1,
+      "estimatedMinutes": 30,
+      "description": "Understanding var, let, const, and how JavaScript handles scope and hoisting.",
+      "subtopics": ["var-let-const", "block-scope", "hoisting", "TDZ"],
+      "prerequisites": []
+    },
+    {
+      "id": "js-data-types",
+      "name": "Data Types",
+      "domain": "javascript",
+      "difficulty": 1,
+      "estimatedMinutes": 30,
+      "description": "Primitives, objects, and how JS handles type coercion.",
+      "subtopics": ["primitives", "objects", "type-coercion", "typeof"],
+      "prerequisites": ["js-variables-scope"]
+    },
+    {
+      "id": "js-functions",
+      "name": "Functions",
+      "domain": "javascript",
+      "difficulty": 2,
+      "estimatedMinutes": 45,
+      "description": "Declarations vs Expressions and the power of Arrow functions.",
+      "subtopics": ["declarations", "expressions", "arrow-functions", "parameters"],
+      "prerequisites": ["js-variables-scope", "js-data-types"]
+    },
+    {
+      "id": "js-closures",
+      "name": "Closures",
+      "domain": "javascript",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "How functions remember their lexical environment.",
+      "subtopics": ["lexical-scope", "closure-patterns", "private-variables"],
+      "prerequisites": ["js-functions"]
+    },
+    {
+      "id": "js-this-binding",
+      "name": "this & Binding",
+      "domain": "javascript",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "Execution context and the rules of the 'this' keyword.",
+      "subtopics": ["implicit-binding", "explicit-binding", "arrow-this", "call-apply-bind"],
+      "prerequisites": ["js-functions", "js-closures"]
+    },
+    {
+      "id": "js-arrays",
+      "name": "Arrays & Methods",
+      "domain": "javascript",
+      "difficulty": 2,
+      "estimatedMinutes": 45,
+      "description": "Modern array manipulation using higher-order functions.",
+      "subtopics": ["map-filter-reduce", "find-some-every", "mutability"],
+      "prerequisites": ["js-data-types", "js-functions"]
+    },
+    {
+      "id": "js-objects",
+      "name": "Objects & Prototypes",
+      "domain": "javascript",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "Deep dive into JS objects and the prototype chain.",
+      "subtopics": ["object-literals", "prototypes", "property-descriptors", "classes"],
+      "prerequisites": ["js-data-types", "js-functions"]
+    },
+    {
+      "id": "js-async-basics",
+      "name": "Asynchronous Basics",
+      "domain": "javascript",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "The Event Loop, Task Queue, and Callback pattern.",
+      "subtopics": ["callbacks", "event-loop", "setTimeout", "setInterval"],
+      "prerequisites": ["js-functions", "js-closures"]
+    },
+    {
+      "id": "js-promises",
+      "name": "Promises",
+      "domain": "javascript",
+      "difficulty": 4,
+      "estimatedMinutes": 75,
+      "description": "Managing future values and avoiding callback hell.",
+      "subtopics": ["promise-states", "chaining", "catch-finally", "Promise.all"],
+      "prerequisites": ["js-async-basics"]
+    },
+    {
+      "id": "js-async-await",
+      "name": "Async/Await",
+      "domain": "javascript",
+      "difficulty": 4,
+      "estimatedMinutes": 60,
+      "description": "Syntactic sugar for cleaner asynchronous code.",
+      "subtopics": ["async-keyword", "await-syntax", "try-catch-async"],
+      "prerequisites": ["js-promises"]
+    },
+    {
+      "id": "dom-basics",
+      "name": "DOM Fundamentals",
+      "domain": "javascript",
+      "difficulty": 2,
+      "estimatedMinutes": 45,
+      "description": "Accessing and modifying the Document Object Model.",
+      "subtopics": ["dom-tree", "selectors", "element-creation"],
+      "prerequisites": ["js-objects"]
+    },
+    {
+      "id": "dom-events",
+      "name": "Event Handling",
+      "domain": "javascript",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "How the browser handles user interaction.",
+      "subtopics": ["event-listeners", "bubbling-capturing", "delegation"],
+      "prerequisites": ["dom-basics", "js-this-binding"]
+    },
+    {
+      "id": "fetch-api",
+      "name": "Fetch API",
+      "domain": "javascript",
+      "difficulty": 3,
+      "estimatedMinutes": 45,
+      "description": "Making network requests to external APIs.",
+      "subtopics": ["get-post", "headers", "json-parsing"],
+      "prerequisites": ["js-async-await"]
+    },
+    {
+      "id": "local-storage",
+      "name": "Browser Storage",
+      "domain": "javascript",
+      "difficulty": 2,
+      "estimatedMinutes": 30,
+      "description": "Persisting data in the browser.",
+      "subtopics": ["localStorage", "sessionStorage", "cookies"],
+      "prerequisites": ["dom-basics"]
+    },
+    {
+      "id": "es6-modules",
+      "name": "ES6 Modules",
+      "domain": "javascript",
+      "difficulty": 2,
+      "estimatedMinutes": 30,
+      "description": "Organizing code with imports and exports.",
+      "subtopics": ["named-exports", "default-exports", "dynamic-imports"],
+      "prerequisites": ["js-functions"]
+    },
+    {
+      "id": "react-jsx",
+      "name": "JSX Syntax",
+      "domain": "react",
+      "difficulty": 2,
+      "estimatedMinutes": 30,
+      "description": "HTML-like syntax for React components.",
+      "subtopics": ["jsx-rules", "expressions-in-jsx", "fragments"],
+      "prerequisites": ["dom-basics"]
+    },
+    {
+      "id": "react-components",
+      "name": "Components",
+      "domain": "react",
+      "difficulty": 2,
+      "estimatedMinutes": 45,
+      "description": "The building blocks of React UI.",
+      "subtopics": ["props", "nesting", "functional-components"],
+      "prerequisites": ["react-jsx", "js-functions"]
+    },
+    {
+      "id": "react-state",
+      "name": "State (useState)",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "Managing dynamic data within a component.",
+      "subtopics": ["useState", "state-updates", "immutability"],
+      "prerequisites": ["react-components", "js-closures"]
+    },
+    {
+      "id": "react-effects",
+      "name": "Effects (useEffect)",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 75,
+      "description": "Synchronizing with external systems.",
+      "subtopics": ["dependencies", "cleanup-function", "mounting-vs-updating"],
+      "prerequisites": ["react-state", "js-async-basics"]
+    },
+    {
+      "id": "react-events",
+      "name": "React Events",
+      "domain": "react",
+      "difficulty": 2,
+      "estimatedMinutes": 30,
+      "description": "Synthetic events and form handling in React.",
+      "subtopics": ["onClick", "onChange", "synthetic-events"],
+      "prerequisites": ["react-components", "dom-events"]
+    },
+    {
+      "id": "react-lists",
+      "name": "Lists & Keys",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 45,
+      "description": "Rendering multiple components efficiently.",
+      "subtopics": ["map-rendering", "key-prop", "reconciliation"],
+      "prerequisites": ["react-components", "js-arrays"]
+    },
+    {
+      "id": "react-forms",
+      "name": "Controlled Components",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "React-driven form state management.",
+      "subtopics": ["value-binding", "input-handling", "validation"],
+      "prerequisites": ["react-state", "react-events"]
+    },
+    {
+      "id": "react-conditional",
+      "name": "Conditional Rendering",
+      "domain": "react",
+      "difficulty": 2,
+      "estimatedMinutes": 30,
+      "description": "Showing UI based on logic.",
+      "subtopics": ["ternaries", "logical-and", "early-returns"],
+      "prerequisites": ["react-jsx"]
+    },
+    {
+      "id": "react-context",
+      "name": "Context API",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 75,
+      "description": "Global state without prop drilling.",
+      "subtopics": ["createContext", "useContext", "Providers"],
+      "prerequisites": ["react-state"]
+    },
+    {
+      "id": "react-reducer",
+      "name": "useReducer Hook",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 75,
+      "description": "Complex state logic using the Redux pattern.",
+      "subtopics": ["actions", "dispatch", "reducer-logic"],
+      "prerequisites": ["react-state"]
+    },
+    {
+      "id": "react-refs",
+      "name": "Refs (useRef)",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 45,
+      "description": "Accessing DOM nodes and persisting mutable values.",
+      "subtopics": ["dom-refs", "persistence-without-rerender"],
+      "prerequisites": ["react-effects"]
+    },
+    {
+      "id": "react-memo",
+      "name": "Memoization",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 60,
+      "description": "Optimizing performance with useMemo and useCallback.",
+      "subtopics": ["referential-equality", "computation-caching"],
+      "prerequisites": ["react-state", "react-effects"]
+    },
+    {
+      "id": "react-custom-hooks",
+      "name": "Custom Hooks",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 75,
+      "description": "Extracting reusable logic from components.",
+      "subtopics": ["hook-composition", "reusability"],
+      "prerequisites": ["react-state", "react-effects"]
+    },
+    {
+      "id": "react-lifecycle",
+      "name": "Component Lifecycle",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 60,
+      "description": "The mount, update, and unmount phases.",
+      "subtopics": ["mounting", "updating", "unmounting"],
+      "prerequisites": ["react-effects"]
+    },
+    {
+      "id": "react-error-boundaries",
+      "name": "Error Boundaries",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 45,
+      "description": "Catching JS errors in the component tree.",
+      "subtopics": ["getDerivedStateFromError", "componentDidCatch"],
+      "prerequisites": ["react-components", "react-lifecycle"]
+    },
+    {
+      "id": "react-portals",
+      "name": "Portals",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 30,
+      "description": "Rendering children outside the parent DOM hierarchy.",
+      "subtopics": ["createPortal", "modals-and-tooltips"],
+      "prerequisites": ["react-components", "dom-basics"]
+    },
+    {
+      "id": "react-data-fetching",
+      "name": "Data Fetching",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 75,
+      "description": "Patterns for loading data from APIs.",
+      "subtopics": ["useEffect-fetch", "loading-states", "error-handling"],
+      "prerequisites": ["react-effects", "fetch-api"]
+    },
+    {
+      "id": "react-suspense",
+      "name": "Suspense & Lazy",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 60,
+      "description": "Concurrent features and code splitting.",
+      "subtopics": ["React.lazy", "Suspense-boundaries"],
+      "prerequisites": ["react-components", "es6-modules"]
+    },
+    {
+      "id": "react-query-basics",
+      "name": "React Query Basics",
+      "domain": "react",
+      "difficulty": 4,
+      "estimatedMinutes": 90,
+      "description": "Server state management and caching.",
+      "subtopics": ["useQuery", "stale-time", "caching"],
+      "prerequisites": ["react-data-fetching"]
+    },
+    {
+      "id": "react-mutations",
+      "name": "Mutations & Optimistic UI",
+      "domain": "react",
+      "difficulty": 5,
+      "estimatedMinutes": 90,
+      "description": "Updating server data and UI state instantly.",
+      "subtopics": ["useMutation", "optimistic-updates", "invalidation"],
+      "prerequisites": ["react-query-basics"]
+    },
+    {
+      "id": "react-router",
+      "name": "React Router",
+      "domain": "react",
+      "difficulty": 3,
+      "estimatedMinutes": 75,
+      "description": "Client-side routing and navigation.",
+      "subtopics": ["links", "params", "nested-routes"],
+      "prerequisites": ["react-components"]
+    },
+    {
+      "id": "react-state-management",
+      "name": "State Management Patterns",
+      "domain": "react",
+      "difficulty": 5,
+      "estimatedMinutes": 90,
+      "description": "Zustand, Redux, and complex state architecture.",
+      "subtopics": ["lifting-state", "store-pattern", "selectors"],
+      "prerequisites": ["react-context", "react-reducer"]
+    },
+    {
+      "id": "react-performance",
+      "name": "Performance",
+      "domain": "react",
+      "difficulty": 5,
+      "estimatedMinutes": 90,
+      "description": "Profiling and optimizing render cycles.",
+      "subtopics": ["virtualization", "profiler", "bundle-optimization"],
+      "prerequisites": ["react-memo", "react-lifecycle"]
+    }
+  ]
+}
